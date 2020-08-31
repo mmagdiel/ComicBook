@@ -1,3 +1,10 @@
 * {
   margin: 0;
 }
+
+.tab_active {
+  color: #007bff;
+  svg {
+    fill: #007bff;
+  }
+}
