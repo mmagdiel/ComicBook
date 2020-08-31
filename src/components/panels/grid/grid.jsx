@@ -11,7 +11,7 @@ export default function panelGrid({ response }) {
   return (
     <>
       {chucking.map((row, i) => (
-        <Row key={`row-${i}`}>
+        <Row key={`row-${i}`} style={{ marginRight: "0px" }}>
           {row.map((item) => (
             <Col key={`card-${item.id}`} sm={nCols}>
               <GridCard item={item} />

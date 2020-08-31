@@ -3,6 +3,7 @@ import { TabContent, TabPane, Nav, NavItem, NavLink } from "reactstrap";
 import cl from "classnames";
 import PanelGrid from "../components/panels/grid/grid";
 import PanelList from "../components/panels/list/list";
+import Title from "../components/layout/header/title";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("1");
@@ -10,10 +11,8 @@ export default function Home() {
     if (activeTab !== tab) setActiveTab(tab);
   };
   return (
-    <div className="container">
-      <div className="d-flex justify-content-center">
-        <h1 className="display-3">ComicBook</h1>
-      </div>
+    <div>
+      <Title />
       <Nav tabs>
         <NavItem>
           <NavLink
@@ -53,7 +52,7 @@ export default function Home() {
         </NavItem>
       </Nav>
       <TabContent activeTab={activeTab}>
-        <TabPane tabId="1">
+        <TabPane tabId="1" className="mx-3">
           <PanelList response={response} />
         </TabPane>
         <TabPane tabId="2">

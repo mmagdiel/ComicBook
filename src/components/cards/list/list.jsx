@@ -20,13 +20,7 @@ export default function cardGrid({ item }) {
       <a href="#">
         <Row>
           <Col sm="3">
-            <CardImg
-              top
-              width="100%"
-              heigth="300px"
-              src={original_url}
-              alt="Card image cap"
-            />
+            <CardImg top width="100%" src={original_url} alt="Card image cap" />
           </Col>
           <Col sm="9">
             <CardBody>

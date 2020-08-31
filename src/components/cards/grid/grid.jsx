@@ -10,13 +10,7 @@ export default function cardGrid({ item }) {
   return (
     <Card body className="border-0">
       <a href="#">
-        <CardImg
-          top
-          width="100%"
-          heigth="300px"
-          src={original_url}
-          alt="Card image cap"
-        />
+        <CardImg top width="100%" src={original_url} alt="Card image cap" />
         <CardBody>
           <CardTitle>{title}</CardTitle>
           <CardText>
